@@ -1,0 +1,18 @@
+<?xml version=1.0 encoding="UTF-8"?>
+<Configuration status="ERROR" >
+<Properties>
+<property name="pattern_file">
+%d{yyyy_MM_dd_HH_mm_ss_SSS} [%t] %-5level %logger{5}- %msg%n
+<property/>
+<Properties/>
+<Appenders>
+<File name="log" filename="logs/log1.txt" append="false">
+<PatternLayout pattern="${pattern_file}">
+</File>
+</Appenders>
+<Loggers>
+<Root level = "info">
+<AppenderRef ref="log"/>
+</Root>
+</Loggers>
+</Configuration>
